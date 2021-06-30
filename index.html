@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Functions</title>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="jQuery-functions.js" type="text/javascript"></script>
+  
+</head>
+<body>
+  <div class="container">
+    <h1>JQuery Functions</h1>
+    
+    <h2>Click</h2>
+    <div class="btn-p-group">
+      <button id="click">click</button>
+    <p class="click">When the button is clicked, this paragraph will turn red and the font will get bold!</p>
+    </div>
+    <hr>
+
+    <h2>Hide</h2>
+    <div class="btn-p-group">
+      <button id="hide">hide</button>
+    <p class="hide">When the button is clicked, this paragraph will turn be hidden immediately. Hide with no parameters is the easiest way to hide elements.</p>
+    </div>
+
+    <div class="btn-p-group">
+      <button id="hide-slow">hide slow</button>
+    <p class="hide-slow">Adding a duration parameter to the hide method turns it into an animation. When clicked, paragraph will be "sucked up" from bottom left corner slowly.</p>
+    </div>
+
+    <hr>
+
+    <h2>Show</h2>
+    <div class="btn-p-group">
+      <button id="show">show</button>
+    <p class="show">When the button is clicked, this paragraph will turn be shown immediately. Show with no parameters is the easiest way to hide elements.</p>
+    </div>
+
+    <div class="btn-p-group">
+      <button id="show-fast">show-fast</button>
+    <p class="show-fast">Adding a duration parameter to the show method turns it into an animation. When clicked, paragraph will be "spewed forth" from bottom left corner quickly.</p>
+    </div>
+
+    <hr>
+
+    <h2>Toggle</h2>
+    <div class="btn-p-group">
+      <button id="toggle">toggle</button>
+    <p class="toggle">When the button is clicked, this paragraph will toggle between showing or hiding.</p>
+    </div>
+
+    <hr>
+
+    <h2>slideDown</h2>
+    <div class="btn-p-group">
+      <button id="slideDown">slideDown</button>
+    <p>When the button is clicked, height of .box is animated to reveal itself. Looks like it's sliding down.</p>
+    
+    </div>
+    <div class="slideDown box"></div>
+
+    <hr>
+
+    <h2>slideUp</h2>
+    <div class="btn-p-group">
+      <button id="slideUp">slideUp</button>
+      <p>When the button is clicked, height of .box is animated to hide itself. Looks like it's sliding up.</p>
+      
+    </div>
+    <div class="slideUp box"></div>
+
+    <hr>
+
+    <h2>slideToggle</h2>
+    <div class="btn-p-group">
+      <button id="slideToggle">slideToggle</button>
+      <p>When the button is clicked, height of .box is animated to hide/show itself. It combines the two methods above.</p>
+      
+    </div>
+    <div class="slideToggle box"></div>
+
+    <hr>
+
+    <h2>fadeIn</h2>
+    <div class="btn-p-group">
+      <button id="fadeIn">fadeIn</button>
+      <p>When button is clicked, .box will fade into view from nothing to opaque.</p>
+      <div class="fadeIn box"></div>
+    </div>
+
+    <hr>
+
+    <h2>fadeOut</h2>
+    <div class="btn-p-group">
+      <button id="fadeOut">fadeOut</button>
+      <p>When button is clicked, .box will from opaque to nothing.</p>
+      <div class="fadeOut box"></div>
+    </div>
+
+    <hr>
+
+    <h2>addClass</h2>
+    <div class="btn-p-group">
+      <button id="addClass">addClass</button>
+      <p>When button is clicked, .box will have another class added to it, making background color cadet blue.</p>
+      
+    </div>
+    <div class="box addClass"></div>
+
+    <hr>
+
+    <h2>before</h2>
+    <div class="btn-p-group">
+      <button id="before">before</button>
+      <p>When button is clicked, a blue box will be inserted before the yellow box.</p>
+      
+    </div>
+    <div class="div-group">
+      <div class="before box"></div>
+    </div>
+
+    <hr>
+
+    <h2>after</h2>
+    <div class="btn-p-group">
+      <button id="after">after</button>
+      <p>When button is clicked, a blue box will be inserted after the yellow box.</p>
+      
+    </div>
+    <div class="div-group">
+      <div class="after box"></div>
+    </div>
+
+    <hr>
+
+    <h2>append</h2>
+    <div class="btn-p-group">
+      <button id="append">append</button>
+      <p>When button is clicked, bottom part of name tag will appear!</p>
+      
+    </div>
+    <div class="p-group">
+      <p class="append hello">Hello my name is:</p>
+    </div>
+
+    <hr>
+
+    <h2>html</h2>
+    <div class="btn-p-group">
+      <button id="html">html</button>
+      <p>when button is clicked, content below is changed</p>
+      
+    </div>
+    <p class="change-me">The content here will be changed when button is clicked!</p>
+
+    <hr>
+
+    <h2>attr</h2>
+    <div class="btn-p-group">
+      <button id="attr">attr</button>
+      <p>When button is clicked, alt and title attributes are added to img</p>
+    </div>
+    <img src="images/macdonal.jpg"id="macdonal">
+
+    <hr>
+
+    <h2>val & text</h2>
+    <div class="btn-p-group">
+      <p>Type something in the input box to see it reproduced to the page. type does not work on inputs so we must use val on the instead</p>
+      <input type="text" id="val" placeholder="type something here">
+    </div>
+    <p class="result"></p>
+    <hr>
+</div><!-- end .container-->
+</body>
+</html>
